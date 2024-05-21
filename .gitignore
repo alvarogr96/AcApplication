@@ -1,15 +1,81 @@
+# Archivos del sistema operativo
+*.swp
+*.*~
+.DS_Store
+
+# Directorio de compilación
+/build
+
+# Carpetas de salida
+/bin/
+/out/
+
+# Archivos generados
+/captures/
+/.idea/
 *.iml
-.gradle
+.gradle/
 /local.properties
-/.idea/caches
+
+# Archivo de configuración local de Android Studio
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
 /.idea/libraries
 /.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.idea/codeStyles/Project.xml
+.idea/codeStyles/codeStyleConfig.xml
+
+# Gradle
+.gradle/
+/build/
+
+# Ficheros de configuración de firma
+*.jks
+*.keystore
+
+# Ficheros de configuración local
 local.properties
+
+# Carpeta de generación de ficheros ProGuard
+/proguard/
+/proguard_files/
+
+# Log Files
+*.log
+
+# Ficheros generados por Android Studio 3.1+ para proyectos Kotlin
+.idea/kotlinGenerated/
+kotlin/
+
+# Ficheros de cobertura
+*.ec
+*.em
+
+# Archivos de navegación
+.navigation/
+
+# Ficheros de Kotlin DSL script
+*.kts
+
+# Ficheros de caché de Kotlin
+*.kotlin_metadata
+*.kotlin_module
+
+# Ficheros temporales
+*.tmp
+*.temp
+
+# Ficheros de paquete
+*.apk
+*.aab
+
+# Excluir todos los archivos README.md para evitar que se ignoren accidentalmente
+!/**/*.md
+
+# Node modules (para proyectos que usan React Native o capacidades de frontend)
+node_modules/
+
+# Archivos de configuración de CI
+/.github
+/.gitlab-ci.yml
