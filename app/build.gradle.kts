@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kapt)
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.androidx.navigation.safe.args)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
@@ -63,6 +64,8 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.gson)
     implementation(libs.retrofit2.converter.gson)
+
+    implementation(libs.glide)
 
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)

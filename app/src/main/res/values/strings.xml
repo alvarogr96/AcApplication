@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AcApplication</string>
+    <string name="title_home">Top movies</string>
 </resources>
