@@ -2,7 +2,6 @@ package com.alvarogomez.acapplication.presentation.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.alvarogomez.acapplication.domain.model.convertToMovieResult
 import com.alvarogomez.acapplication.domain.usecase.GetPopularMoviesUseCase
 import com.alvarogomez.acapplication.domain.utils.ResultType
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -30,7 +29,7 @@ class HomeViewModel @Inject constructor(private val getPopularMoviesUseCase: Get
                 is ResultType.Loading -> {}
                 is ResultType.Success -> {
                     response.data?.let {
-                        _state.value = HomeUiState.Success(it.convertToMovieResult())
+                        _state.value = HomeUiState.Success(it)
                     }
                 }
             }

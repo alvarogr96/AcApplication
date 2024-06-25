@@ -1,6 +1,6 @@
 package com.alvarogomez.acapplication.domain.repository
 
-import com.alvarogomez.acapplication.data.dto.response.MoviesResponse
+import com.alvarogomez.acapplication.domain.model.MovieResult
 import retrofit2.Response
 
 interface MoviesRepository {
@@ -8,5 +8,5 @@ interface MoviesRepository {
         language: String,
         page: Int?,
         region: String?
-    ): Response<MoviesResponse>
+    ): Response<MovieResult>
 }
